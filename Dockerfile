@@ -21,10 +21,10 @@ ENV DAGSTER_HOME=/app/dbt_dagster_earnings
 ENV DBT_PROFILES_DIR=/app/earningsdbttwo
 
 # Expose the port that Dagster's webserver will run on
-EXPOSE 3000
+EXPOSE 8080
 
 # Set the default command to start the Dagster webserver
-ENTRYPOINT ["dagster-webserver", "-h", "0.0.0.0", "-p", "3000", "--module-name", "dbt_dagster_earnings.dbt_dagster_earnings.definitions", "--working-directory", "/app"]
+ENTRYPOINT ["dagster-webserver", "-h", "0.0.0.0", "-p", "8080", "--module-name", "dbt_dagster_earnings.dbt_dagster_earnings.definitions", "--working-directory", "/app"]
 
 
 
