@@ -1,0 +1,12 @@
+earningsdbttwo:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com
+      user: u4a53f8t6m3umi
+      password: p4ed6988543cc2dd8da5b07d305cc023e44430faddac37595a0e511ec88b45f29
+      dbname: d91l0p515qsp24
+      schema: earnings
+      port: 5432
+      threads: 1
