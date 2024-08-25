@@ -20,6 +20,10 @@ ENV PYTHONPATH="/app:${PYTHONPATH}"
 ENV DAGSTER_HOME=/app/dbt_dagster_earnings
 ENV DBT_PROFILES_DIR=/app/earningsdbttwo
 
+
+# Ensure that the manifest.json file is generated
+RUN dbt compile --project-dir /app/earningsdbttwo
+
 # Expose the port that Dagster's webserver will run on
 EXPOSE 8080
 
